@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | John Doe</title>
+    <meta name="description" content="Read my latest blog posts and technical articles about web development, programming, and technology.">
+    <meta name="author" content="John Doe">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">John Doe</div>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="articles.html" class="active">Articles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>My Articles</h1>
+            <p>Insights, tutorials, and thoughts on tech and web development.</p>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <main>
+        <section class="card">
+            <h3>How to Build a Responsive Portfolio</h3>
+            <p>Step-by-step guide to designing and coding a personal portfolio.</p>
+            <a href="#" class="btn-small">Read More</a>
+        </section>
+
+        <section class="card">
+            <h3>JavaScript Best Practices</h3>
+            <p>Learn clean, efficient, and maintainable coding practices for JavaScript.</p>
+            <a href="#" class="btn-small">Read More</a>
+        </section>
+
+        <section class="card">
+            <h3>Understanding APIs</h3>
+            <p>A beginner-friendly guide to working with RESTful APIs and JSON data.</p>
+            <a href="#" class="btn-small">Read More</a>
+        </section>
+
+        <section class="card">
+            <h3>Top 10 CSS Tricks</h3>
+            <p>Improve your frontend designs using these amazing CSS techniques.</p>
+            <a href="#" class="btn-small">Read More</a>
+        </section>
+
+        <section class="card">
+            <h3>Becoming a Better Developer</h3>
+            <p>Tips on improving problem-solving skills, debugging, and coding faster.</p>
+            <a href="#" class="btn-small">Read More</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navbar = document.querySelector('.navbar');
+        toggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

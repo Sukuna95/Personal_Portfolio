@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe | Professional Portfolio</title>
+    <meta name="description" content="John Doe's personal portfolio showcasing projects, articles, education, and contact details. Explore my work and get in touch!">
+    <meta name="keywords" content="John Doe, portfolio, projects, frontend developer, web developer, articles, contact">
+    <meta name="author" content="John Doe">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">John Doe</div>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>John Doe</span></h1>
+            <p>Frontend Developer | Open Source Contributor | Tech Enthusiast</p>
+            <a href="projects.html" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Projects Section -->
+        <section class="card">
+            <h3>Projects</h3>
+            <ul>
+                <li>HTML Only Portfolio</li>
+                <li>Weather App</li>
+                <li>To-Do List</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+            </ul>
+            <a href="projects.html" class="btn-small">See All Projects</a>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="card">
+            <h3>Work Experience</h3>
+            <p><strong>roadmap.sh</strong> – Solved all frontend projects.</p>
+            <a href="#" class="btn-small">Visit My Profile</a>
+        </section>
+
+        <!-- Open Source Work -->
+        <section class="card">
+            <h3>Open Source Contributions</h3>
+            <p>Contributed to 50+ open-source projects and built my own with 200+ GitHub stars.</p>
+            <a href="#" class="btn-small">Visit My GitHub</a>
+        </section>
+
+        <!-- Education -->
+        <section class="card">
+            <h3>Education</h3>
+            <p>Bachelor's in Computer Science</p>
+            <p>Won Acme Hackathon & Organized 30+ workshops.</p>
+            <h4>Relevant Courses:</h4>
+            <ul>
+                <li>Object-Oriented Programming</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Web Engineering</li>
+                <li>AI & Machine Learning</li>
+                <li>Database Management Systems</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h3>What My Teachers Say</h3>
+        <div class="review-container">
+            <div class="review">
+                <p>“John Doe was a brilliant student who always stood out with his assignments.”</p>
+                <span>— Jane Doe, Professor</span>
+            </div>
+            <div class="review">
+                <p>“Highly creative and hardworking, John delivered top-quality work.”</p>
+                <span>— Mark Smith, Lecturer</span>
+            </div>
+            <div class="review">
+                <p>“One of the best students I’ve taught. Always curious and eager to learn.”</p>
+                <span>— Emily Johnson, Mentor</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Responsive Menu -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navbar = document.querySelector('.navbar');
+        toggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
